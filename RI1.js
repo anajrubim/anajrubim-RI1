@@ -1,191 +1,166 @@
-const personagem0 = {
-    nome: "Steve Rogers",
-    codinome: "Capitão América",
-    armaPrincipal: "Escudo americano",
-    armaSecundaria: "",
+const personagem = {
+    nome: 'Steve Rogers',
+    codinome:'Capitão América',
+    armaPrincipal: 'Escudo americano',
+    armaSecundaria: '',
     velocidade: 85,
     forca: 75,
     resistencia: 80,
     descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
-    }
-}
-
-const personagem1 = {
-    nome: "Tony Stark",
-    codinome: "Homem de Ferro",
-    armaPrincipal: "Armadura",
-    armaSecundaria: "Dinheiro",
-    velocidade: 90,
-    forca: 70,
-    resistencia: 85,
-    descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
     }
 }
 
 const personagem2 = {
-    nome: "Bruce Banner",
-    codinome: "Hulk",
-    armaPrincipal: "",
-    armaSecundaria: "",
-    velocidade: 95,
+    nome: 'Bruce Banner',
+    codinome:'Hulk',
+    armaPrincipal: 'Punhos',
+    armaSecundaria: '',
+    velocidade: 40,
     forca: 95,
-    resistencia: 95,
+    resistencia: 90,
     descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
     }
 }
-
 const personagem3 = {
-    nome: "Natasha Romanoff",
-    codinome: "Viúva-Negra",
-    armaPrincipal: "manoplas com descargas elétricas, bastões de choque",
-    armaSecundaria: "facas e um gancho com cabo zip",
-    velocidade: 90,
-    forca: 70,
-    resistencia: 65,
+    nome: 'Tony Stark',
+    codinome:'Homem de Ferro',
+    armaPrincipal: 'Armadura de Ferro',
+    armaSecundaria: '',
+    velocidade: 80,
+    forca: 60,
+    resistencia: 75,
     descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
     }
 }
-
 const personagem4 = {
-    nome: "Thor",
-    codinome: "Thor",
-    armaPrincipal: "Mjolnir",
-    armaSecundaria: "",
+    nome: 'Natasha Romanoff',
+    codinome:'Viúva Negra',
+    armaPrincipal: 'Manoplas com descargas elétricas e bastões de choque',
+    armaSecundaria: 'Facas',
+    velocidade: 70,
+    forca: 65,
+    resistencia: 75,
+    descricao: function() {
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
+    }
+}
+const personagem5 = {
+    nome: 'Thor',
+    codinome:'Thor',
+    armaPrincipal: 'Mjölnir',
+    armaSecundaria: 'Raios e trovões',
     velocidade: 90,
     forca: 90,
-    resistencia: 85,
+    resistencia: 90,
     descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
     }
 }
-
-const personagem5 = {
-    nome: "Clint Barton",
-    codinome: "Gavião Arqueiro",
-    armaPrincipal: "Arco e flecha",
-    armaSecundaria: "",
-    velocidade: 70,
-    forca: 70,
-    resistencia: 60,
-    descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
-    }
-}
-
 const personagem6 = {
-    nome: "Wanda Maximoff",
-    codinome: "Feiticeira Escarlate",
-    armaPrincipal: "Magia",
-    armaSecundaria: "",
-    velocidade: 40,
-    forca: 80,
-    resistencia: 50,
+    nome: 'Thanos',
+    codinome:'Thanos',
+    armaPrincipal: 'Manopla do Infinito',
+    armaSecundaria: '',
+    velocidade: 85,
+    forca: 85,
+    resistencia: 90,
     descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
     }
 }
-
 const personagem7 = {
-    nome: "Groot",
-    codinome: "Groot",
-    armaPrincipal: "",
-    armaSecundaria: "",
-    velocidade: 30,
+    nome: 'Wanda Maximoff',
+    codinome:'Feiticeira Escarlate',
+    armaPrincipal: 'Magia',
+    armaSecundaria: '',
+    velocidade: 55,
     forca: 80,
+    resistencia: 70,
+    descricao: function() {
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
+    }
+}
+const personagem8 = {
+    nome: 'Peter Parker',
+    codinome:'Homem-Aranha',
+    armaPrincipal: 'Teias',
+    armaSecundaria: '',
+    velocidade: 80,
+    forca: 70,
     resistencia: 80,
     descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
+        return "Nome do personagem: "+this.nome+"\n" +
+        "Codinome do personagem: "+this.codinome+"\n" +
+        "Arma principal: "+this.armaPrincipal+"\n" +
+        "Arma secundária: "+this.armaSecundaria+"\n" +
+        "Nível de Força: "+this.forca+"\n" +
+        "Nível de Velocidade: "+this.velocidade+"\n" +
+        "Nome do resistência: "+this.resistencia+"\n"
     }
 }
 
-const personagem8 = {
-    nome: "Thanos",
-    codinome: "Thanos",
-    armaPrincipal: "Manopla do infinito",
-    armaSecundaria: "",
-    velocidade: 90,
-    forca: 100,
-    resistencia: 95,
-    descricao: function() {
-        return `Nome do personagem: ${this.nome} \n`
-            + `Codinome do personagens: ${this.codinome} \n`
-            + `Arma principal: ${this.armaPrincipal} \n`
-            + `Arma secundária: ${this.forca} \n`
-            + `Nível de força: ${this.forca} \n`
-            + `Nível de velocidade: ${this.velocidade} \n`
-            + `Nível de restência: ${this.resistencia}` 
-    }
-}
+let lista = [personagem,personagem2,personagem3,personagem4,personagem5,personagem6,personagem7,personagem8]
 
-
-let lista = [personagem0, personagem1, personagem2, personagem3, personagem4, personagem5, personagem6, personagem7, personagem8];
-
-for (let i = 0; i < lista.length; i++) {
-    const personagem = lista[i];
-    const total = personagem.forca + personagem.velocidade + personagem.resistencia;
-
-    for (let j = i + 1; j < lista.length; j++) {
-        const contra = lista[j];
-        const totalContra = contra.forca + contra.velocidade + contra.resistencia;
-
-        if (total > totalContra) {
-            console.log(`${personagem.codinome} ganhou de ${contra.codinome}`);
-        } else if (total < totalContra) {
-            console.log(`${personagem.codinome} perdeu para ${contra.codinome}`);
-        } else {
-            console.log(`${personagem.codinome} empatou com ${contra.codinome}`);
+lista.forEach(function(p1) {
+    let total = p1.forca + p1.resistencia + p1.velocidade
+    lista.forEach(function(p2){
+        if (p1 !== p2) {
+            let totalVS = p2.forca + p2.resistencia + p2.velocidade
+            if (total > totalVS){
+                console.log(p1.descricao() + " ganhou de " + p2.descricao())
+            }
+            else if (total < totalVS){
+                console.log(p2.descricao() + " ganhou de " + p1.descricao())
+            }
+            else {
+                console.log(p2.descricao() + " empatou com " + p1.descricao())
+            }
         }
-    }
-} 
+    })
+})
+lista.shift()
